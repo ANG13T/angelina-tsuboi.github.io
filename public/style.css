@@ -5,6 +5,10 @@ body {
   background: linear-gradient(to right, #5c258d, #4389a2);
 }
 
+.elementCell{
+  cursor: pointer;
+}
+
 .periodic {
   position: relative;
   height: 200px;
