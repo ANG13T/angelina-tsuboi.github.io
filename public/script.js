@@ -1,8 +1,6 @@
 $(".elementCell").click((e) => {
     console.log("This is working")
     $(e.target).css("color", "red")
-    
-    // console.log(e.target.children[0])
 })
 
 let periodicElem = document.getElementsByClassName("elementCell");
@@ -20,6 +18,7 @@ for(let i = 0; i < periodArry.length; i++)
         let elementName = child.querySelector(".at_details").innerHTML.match(/\w+/);
         let symbol = child.querySelector(".symbol").innerHTML;
         let atomicMass = child.querySelector(".at_details").innerHTML.match(/\d+\W\d+/);
+        let energyLevel = event.target.parentNode.attributes[1].value;
         // let period = child.querySelector("")
 
         //modal stuff
@@ -43,6 +42,9 @@ for(let i = 0; i < periodArry.length; i++)
 
         let electronsText = document.getElementById("electrons");
         electronsText.innerHTML = "Electrons: ";
+
+        let energyLevelText = document.getElementById("energyLevel");
+        energyLevelText.innerHTML = "Energy Level: " + energyLevel;
         
     })
     // data-toggle="modal" data-target="#elementModal"
@@ -56,3 +58,4 @@ let periodicRows = document.getElementsByClassName("periodic-row");
 for(let i = 0; i < periodicRows.length - 3; i++){
     periodicRows[i].setAttribute("period", i + 1)
 }
+
