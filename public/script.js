@@ -45,6 +45,8 @@ for(let i = 0; i < periodArry.length; i++)
         let energyLevel = event.target.parentNode.attributes[1].value;
         let valence = event.target.attributes[1].value;
         let charge = event.target.attributes[2].value;
+        let family = child.attributes[1].value;
+        console.log(family)
 
         //modal stuff
         let elementSymbolText = document.getElementById("elementSymbol");
@@ -87,7 +89,7 @@ for(let i = 0; i < periodArry.length; i++)
         electronsText.innerHTML = "Electrons: " + (atomicNumber - charge);
 
         let familyNameText = document.getElementById("group");
-        familyNameText.innerHTML = "Family: " + familyName;
+        familyNameText.innerHTML = "Family: " + family;
 
     })
     // data-toggle="modal" data-target="#elementModal"
