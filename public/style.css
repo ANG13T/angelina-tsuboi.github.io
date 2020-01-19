@@ -124,6 +124,18 @@ body {
   background-color: rgba(0, 96, 160, 0.9);
 }
 
+.modal-header{
+  background-color: #4389a2;
+}
+
+.modal-body{
+  font-family: Arial;
+}
+
+.close{
+  color:white;
+}
+
 
 
 

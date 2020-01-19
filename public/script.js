@@ -67,6 +67,7 @@ for(let i = 0; i < periodArry.length; i++)
         let neutronsText = document.getElementById("neutrons");
         neutronsText.innerHTML = "Neutrons: " + Math.round(atomicMass - atomicNumber);
 
+        energyLevel = energyLevel % 1 == 0 ? energyLevel : "depends"
         let energyLevelText = document.getElementById("energyLevel");
         energyLevelText.innerHTML = "Energy Level: " + energyLevel;
         
