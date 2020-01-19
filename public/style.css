@@ -225,12 +225,30 @@ b{
   footer {
     margin-top: 2rem;
     width: 100%;
-    background-color: rgb(61, 61, 61);
+    background-color: rgba(43, 42, 114, 0.753);
     color: white;
-   
+    display: flex;
+    justify-content: space-between;
   }
 
   #cred{
-    font-size: 1rem;
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+
+  #promo{
+    line-height: 3rem;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+  }
+
+  #link{
+    text-decoration: none;
+    color: #21dada;
+    transition: 1s color;
+  }
+
+  #link:hover{
+    color: #158f8f;
   }
 }
