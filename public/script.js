@@ -50,30 +50,30 @@ for(let i = 0; i < periodArry.length; i++)
 
         //modal stuff
         let elementSymbolText = document.getElementById("elementSymbol");
-        elementSymbolText.innerHTML= "Symbol: " + symbol;
+        elementSymbolText.innerHTML= "<b>Symbol: </b>" + symbol;
 
         let atomicNumberText = document.getElementById("atomicNumber");
-        atomicNumberText.innerHTML = "Atomic Number: " + atomicNumber;
+        atomicNumberText.innerHTML = "<b>Atomic Number: </b>" + atomicNumber;
 
         let elementNameText = document.getElementById("elementName");
-        elementNameText.innerHTML = "Element Name: " + elementName.toString().toUpperCase();
+        elementNameText.innerHTML = "<b>Element Name: </b>" + elementName.toString().toUpperCase();
 
         let atomicMassText = document.getElementById("atomicMass");
-        atomicMassText.innerHTML = "Atomic Mass: " + atomicMass;
+        atomicMassText.innerHTML = "<b>Atomic Mass: </b>" + atomicMass;
 
         let protonsText = document.getElementById("protons");
-        protonsText.innerHTML = "Protons: " + atomicNumber;
+        protonsText.innerHTML = "<b>Protons: </b>" + atomicNumber;
 
         let neutronsText = document.getElementById("neutrons");
-        neutronsText.innerHTML = "Neutrons: " + Math.round(atomicMass - atomicNumber);
+        neutronsText.innerHTML = "<b>Neutrons: </b>" + Math.round(atomicMass - atomicNumber);
 
         energyLevel = energyLevel % 1 == 0 ? energyLevel : "depends"
         let energyLevelText = document.getElementById("energyLevel");
-        energyLevelText.innerHTML = "Energy Level: " + energyLevel;
+        energyLevelText.innerHTML = "<b>Energy Level: </b>" + energyLevel;
         
         valence = valence % 1 == 0 ? valence : "depends"
         let valenceText = document.getElementById("valence");
-        valenceText.innerHTML = "Valence Electrons: " + valence;
+        valenceText.innerHTML = "<b>Valence Electrons: </b>" + valence;
 
         if(charge == 4){
             charge = "+/- " + 4
@@ -83,14 +83,14 @@ for(let i = 0; i < periodArry.length; i++)
 
         charge = charge % 1 == 0 ? charge : "depends";
         let chargeText = document.getElementById("charge");
-        chargeText.innerHTML = "Charge: " + charge
+        chargeText.innerHTML = "<b>Charge: </b>" + charge
 
         charge = charge % 1 == 0 ? charge : 0;
         let electronsText = document.getElementById("electrons");
-        electronsText.innerHTML = "Electrons: " + (atomicNumber - charge);
+        electronsText.innerHTML = "<b>Electrons: </b>" + (atomicNumber - charge);
 
         let familyNameText = document.getElementById("group");
-        familyNameText.innerHTML = "Family: " + family;
+        familyNameText.innerHTML = "<b>Family: </b>" + family;
 
     })
     // data-toggle="modal" data-target="#elementModal"
