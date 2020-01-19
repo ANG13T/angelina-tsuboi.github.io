@@ -28,8 +28,6 @@ $(".cell:nth-child(18)").attr("valenceElectrons", 8);
 $(".cell:nth-child(18)").attr("charge", 0);
 
 
-
-
 let periodicElem = document.getElementsByClassName("elementCell");
 let periodArry = Array.from(periodicElem);
 
@@ -67,9 +65,6 @@ for(let i = 0; i < periodArry.length; i++)
         let neutronsText = document.getElementById("neutrons");
         neutronsText.innerHTML = "Neutrons: " + Math.round(atomicMass - atomicNumber);
 
-        let electronsText = document.getElementById("electrons");
-        electronsText.innerHTML = "Electrons: ";
-
         let energyLevelText = document.getElementById("energyLevel");
         energyLevelText.innerHTML = "Energy Level: " + energyLevel;
         
@@ -86,6 +81,13 @@ for(let i = 0; i < periodArry.length; i++)
         charge = charge % 1 == 0 ? charge : "depends";
         let chargeText = document.getElementById("charge");
         chargeText.innerHTML = "Charge: " + charge
+
+        charge = charge % 1 == 0 ? charge : 0;
+        let electronsText = document.getElementById("electrons");
+        electronsText.innerHTML = "Electrons: " + (atomicNumber - charge);
+
+        let familyNameText = document.getElementById("group");
+        familyNameText.innerHTML = "Family: " + familyName;
 
     })
     // data-toggle="modal" data-target="#elementModal"
