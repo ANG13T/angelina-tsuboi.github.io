@@ -31,6 +31,39 @@ $(".cell:nth-child(18)").attr("charge", 0);
 let periodicElem = document.getElementsByClassName("elementCell");
 let periodArry = Array.from(periodicElem);
 
+$("input").submit((e) => {
+    search();
+})
+
+$("#searchButton").click((e) => {
+    e.preventDefault();
+    search();
+})
+
+function search(){
+    var inputText = $("input").val();
+
+    if(inputText !== ""){
+        for(var i = 0; i < periodArry.length; i++){
+            // let child = periodArry[i].childNodes[1];
+            // let elementName = child.querySelector(".at_details").innerHTML.match(/\w+/);
+            var child = periodArry[i].childNodes[1];
+            var symbol = child.querySelector(".symbol").innerHTML
+            var name = periodArry[i].childNodes[1].querySelector(".at_details").innerHTML.match(/\w+/)[0];
+            if(name.startsWith(inputText)){
+                console.log(name);
+                console.log(child);
+                child.style.border = "0.3rem solid #00FFFF"
+                console.log(symbol)
+            }else{
+                child.style.border = "none"
+            }
+        }
+    } else{
+        alert("Invalid Input!")
+    }
+}
+
 
 for(let i = 0; i < periodArry.length; i++)
 {
