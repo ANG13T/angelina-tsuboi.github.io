@@ -5,9 +5,13 @@ body {
   background: linear-gradient(to right, #5c258d, #4389a2);
 }
 
-/* #navbar{
-  background-color: rgba(28, 195, 195, 0.603);
-} */
+.navbar-brand{
+  font-weight: bold;
+}
+
+.navbar-brand:hover{
+  cursor: default;
+}
 
 #search{
   width: 30rem;
