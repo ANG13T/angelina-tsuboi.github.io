@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Get in touch on My Creative Portfolio</title>
-    <link>https://example.org/contact/</link>
+    <link>https://angelina-tsuboi.github.io/contact/</link>
     <description>Recent content in Get in touch on My Creative Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Nov 2016 13:00:25 +0530</lastBuildDate><atom:link href="https://example.org/contact/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Nov 2016 13:00:25 +0530</lastBuildDate><atom:link href="https://angelina-tsuboi.github.io/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
